@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palm | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Palm.</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="greeting">สวัสดีครับ! ผมชื่อ</p>
+                <h1 class="name">ปาล์ม (Palm)</h1>
+                <h2 class="title">Student | Web Developer | Tech Enthusiast</h2>
+                <p class="description">ผมมีความหลงใหลในเทคโนโลยีและการพัฒนาเว็บไซต์ ชอบเรียนรู้สิ่งใหม่ๆ และสร้างสรรค์ผลงานผ่านโค้ด</p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">About Me</a>
+                    <a href="#portfolio" class="btn btn-outline">View Portfolio</a>
+                </div>
+            </div>
+            <div class="hero-3d" id="canvas-container">
+                <!-- Three.js Canvas will be appended here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-info">
+                    <p><strong>ชื่อ-นามสกุล:</strong> [ใส่ชื่อ-นามสกุล]</p>
+                    <p><strong>ชื่อเล่น:</strong> ปาล์ม</p>
+                    <p><strong>ระดับชั้น:</strong> [ใส่ระดับชั้น]</p>
+                    <p><strong>โรงเรียน:</strong> [ใส่ชื่อโรงเรียน]</p>
+                    <p>ผมเป็นนักเรียนที่ชื่นชอบในด้านเทคโนโลยีและการเขียนโปรแกรม มีความฝันที่จะเป็นนักพัฒนาซอฟต์แวร์ที่สร้างสรรค์สิ่งที่มีประโยชน์</p>
+                    
+                    <h3 class="sub-title">ความสนใจ</h3>
+                    <div class="tags">
+                        <span class="tag">Programming</span>
+                        <span class="tag">Web Development</span>
+                        <span class="tag">Technology</span>
+                        <span class="tag">3D Design</span>
+                    </div>
+                </div>
+                <div class="about-skills">
+                    <h3 class="sub-title">Skills</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>CSS</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>JavaScript</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 70%;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">25XX - 25XX</span>
+                        <h3 class="timeline-title">มัธยมศึกษาตอนปลาย</h3>
+                        <h4 class="timeline-school">โรงเรียน [ชื่อโรงเรียน]</h4>
+                        <p class="timeline-text">แผนการเรียน วิทย์-คณิต (หรืออื่นๆ) เกรดเฉลี่ยสะสม x.xx</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">25XX - 25XX</span>
+                        <h3 class="timeline-title">มัธยมศึกษาตอนต้น</h3>
+                        <h4 class="timeline-school">โรงเรียน [ชื่อโรงเรียน]</h4>
+                        <p class="timeline-text">เกรดเฉลี่ยสะสม x.xx เริ่มสนใจการเขียนโปรแกรม</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="grid">
+                <!-- Project 1 -->
+                <div class="card">
+                    <div class="card-img placeholder-img">Project 1 Image</div>
+                    <div class="card-body">
+                        <h3 class="card-title">My Personal Website</h3>
+                        <p class="card-desc">เว็บไซต์พอร์ตโฟลิโอส่วนตัวที่พัฒนาด้วย HTML, CSS และ JavaScript</p>
+                        <div class="card-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </div>
+                        <button class="btn btn-outline btn-small open-modal">View Details</button>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="card">
+                    <div class="card-img placeholder-img">Project 2 Image</div>
+                    <div class="card-body">
+                        <h3 class="card-title">School Project App</h3>
+                        <p class="card-desc">แอปพลิเคชันช่วยจัดการตารางเรียนสำหรับนักเรียน</p>
+                        <div class="card-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                        </div>
+                        <button class="btn btn-outline btn-small open-modal">View Details</button>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="card">
+                    <div class="card-img placeholder-img">Project 3 Image</div>
+                    <div class="card-body">
+                        <h3 class="card-title">3D Web Experiment</h3>
+                        <p class="card-desc">ทดลองสร้างโมเดล 3D บนเว็บไซต์ด้วย Three.js</p>
+                        <div class="card-tech">
+                            <span>Three.js</span>
+                            <span>WebGL</span>
+                        </div>
+                        <button class="btn btn-outline btn-small open-modal">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Palm. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Modal (Hidden by default) -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title">Project Title</h2>
+            <div class="modal-body">
+                <p>รายละเอียดเพิ่มเติมเกี่ยวกับโปรเจกต์นี้...</p>
+                <div class="placeholder-img" style="height: 200px; margin-top: 20px;">Image Details</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
